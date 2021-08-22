@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background:white;
+    height: 100vh;
+    overflow: hidden;
+}
+span{
+    position: absolute;
+    background: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/87184760_207152733739430_2294233149971890176_n.png?_nc_cat=104&ccb=1-5&_nc_sid=aee45a&_nc_ohc=_RM3CZ11t9EAX-BmXCj&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=ce0d6fb1e49d06463b817653536fbfa9&oe=6144AD46");
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%,-50%);
+    animation: animati 2s linear infinite; 
+    background-size: cover;
+}
+@keyframes animati {
+    0% {
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%,-1000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
+.ngang{
+    height: 100px;
+    width:100%;
+    background-color: violet;
+    font-size: 1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+.anh{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.nhan{
+    height: 50px;
+    width:100%;
+    background-color: green;
+    font-size: 1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color:white;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật </title>
+    <link rel="stylesheet" href="mau.css">
+</head>
+<body>
+    <script>
+        document.addEventListener("mousemove",(e)=>{
+            let body = document.querySelector("body");
+            let heart = document.createElement("span");
+            let x = e.offsetX;
+            let y = e.offsetY;
+            heart.style.left = x + "px";
+            heart.style.top = y + "px";
+            let size = Math.random() * 100;
+            heart.style.width = size + "px";
+            heart.style.height = size + "px";
+            body.appendChild(heart);
+            setTimeout(()=>{
+                heart.remove();
+            },2000)
+        })
+    </script>
+    <div class="ngang">
+       <h1>CHÚC MỪNG SINH NHẬT NY MÌNH </h1>
+    </div>
+    <div class="nhan">
+        <p >Ny sang tuổi mới hay ăn chóng nậy nầy . xinh hơn nì . giỏi hơn nì . Bớt giận hơn nì. Đừng hay nhắc chuyện cũ nữa nì . có chi là chúc hết nà </p>
+    </div>
+    <div class="anh">
+        <img src="https://scontent-hkg4-2.xx.fbcdn.net/v/t1.6435-9/239856334_1180511545793118_3596172328701702221_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=yi7YgwJLY1sAX_TxmIg&_nc_ht=scontent-hkg4-2.xx&oh=fe099d03b6f2dbaa1e555f7f373b22c3&oe=6148EFAD" alt="anh">
+        
+    </div>
+</body>
+</html>
